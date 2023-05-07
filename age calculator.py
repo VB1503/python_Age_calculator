@@ -1,0 +1,10 @@
+from datetime import date
+dob = input("dob:")
+bdate = int(dob[:2])
+bmonth = int(dob[3:5])
+byear = int(dob[6:])
+today = date.today()
+age = today.year - byear - ((today.month, today.day) < (bmonth, bdate))
+print(age)
+print(((today.month, today.day) < (bmonth, bdate)))
+print(17-True)
